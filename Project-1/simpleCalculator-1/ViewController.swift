@@ -49,17 +49,18 @@ class ViewController: UIViewController {
         //operation signs pressed
         //identify using tags
         
-
         
+        if (screenLabel.text == "" || screenLabel.text == "+") {
+            return
+        }
+        
+        if (havePrevValue == true && isCalculating == true) {
+            return
+        }
+        
+        
+        //addition
         if (sender.tag == 10) {
-            
-            if (screenLabel.text == "" || screenLabel.text == "+") {
-                return
-            }
-            
-            if (havePrevValue == true && isCalculating == true) {
-                return
-            }
             
             if (havePrevValue != true) {
                 prevValue = Double(screenLabel.text!)!
@@ -73,6 +74,16 @@ class ViewController: UIViewController {
             isCalculating = true
             
             print(prevValue)
+        }
+        
+        //reset
+        
+        if (sender.tag == 15) {
+            print("reset pressed")
+            havePrevValue = false
+            screenLabel.text = ""
+            currentOperator = ""
+            isCalculating = false
         }
         
         
