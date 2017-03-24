@@ -11,8 +11,12 @@ import UIKit
 class ViewController: UIViewController {
     var prevValue: Double = 0
     var currentValue: Double = 0;
+    var result: Double = 0
     var isCalculating = false
     var havePrevValue = false
+    var currentOperator = ""
+    var reset = false
+    
     
     
     @IBOutlet weak var screenLabel: UILabel!
@@ -23,7 +27,11 @@ class ViewController: UIViewController {
         
 //       print(sender.tag)
         
-        if (isCalculating) {
+        if (isCalculating == true) {
+            screenLabel.text = ""
+        }
+        
+        if (reset == true) {
             screenLabel.text = ""
         }
         
@@ -37,39 +45,69 @@ class ViewController: UIViewController {
     }
     
     @IBAction func getOperation(_ sender: UIButton) {
-        //if I have prevValue, do not add any more numbers
-        if(havePrevValue) {
-            return
-        }
+
         //operation signs pressed
         //identify using tags
-        if (screenLabel.text != "" && screenLabel.text != "+" && sender.tag != 15 && sender.tag != 14) {
+        
+
+        
+        if (sender.tag == 10) {
             
-            prevValue = Double(screenLabel.text!)!
-            
-            //print(prevValue)
-            
-            if (sender.tag == 10) {
-                screenLabel.text = "+"
-                
+            if (screenLabel.text == "" || screenLabel.text == "+") {
+                return
             }
             
-            isCalculating = true
-            havePrevValue = true
+            if (havePrevValue == true && isCalculating == true) {
+                return
+            }
             
+            if (havePrevValue != true) {
+                prevValue = Double(screenLabel.text!)!
+            } else {
+                return
+            }
+            
+            havePrevValue = true
+            screenLabel.text = "+"
+            currentOperator = "+"
+            isCalculating = true
+            
+            print(prevValue)
         }
         
         
-        //Equals
-       
-        
-    
-    }
+            
+            
+}
     
     
     @IBAction func getResult(_ sender: UIButton) {
         //equal sign pressed
-    }
+        
+        if (currentOperator == "+") {
+            if (screenLabel.text == "+") {
+                return
+            } else {
+                currentValue = Double(screenLabel.text!)!
+            }
+            
+            //        print(currentValue + prevValue)
+            result = currentValue + prevValue
+
+        }
+        
+        
+        //valid for all operators
+        screenLabel.text = String(result)
+        currentValue = 0
+        prevValue = 0
+        isCalculating = false
+        havePrevValue = false
+        reset = true
+        
+        
+        
+}
     
     
     override func viewDidLoad() {
