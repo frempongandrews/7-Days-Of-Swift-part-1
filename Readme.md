@@ -1,5 +1,5 @@
 7-Days-of-Swift-part-1
-Learning Swift, 1 sprint at a time
+Learning Swift By Doing
 
 Hi Everyone
 
