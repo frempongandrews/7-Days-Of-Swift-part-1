@@ -72,7 +72,7 @@ class ViewController: UIViewController {
             currentOperator = "+"
             isCalculating = true
             return
-            print(prevValue)
+           
         }
         
         //subtraction
@@ -89,6 +89,8 @@ class ViewController: UIViewController {
             havePrevValue = true
             screenLabel.text = "-"
             currentOperator = "-"
+            isCalculating = true
+            return
             
             
 //            print(prevValue)
