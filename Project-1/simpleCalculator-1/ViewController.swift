@@ -14,6 +14,8 @@ class ViewController: UIViewController {
         //numbers pressed
         //identify using tags
         
+        print(sender.tag)
+        
         
     }
     
