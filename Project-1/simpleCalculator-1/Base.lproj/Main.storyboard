@@ -45,7 +45,7 @@
                                                     <color key="titleColor" red="0.99888569120000004" green="1" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 </state>
                                                 <connections>
-                                                    <action selector="getOperation:" destination="BYZ-38-t0r" eventType="touchUpInside" id="xUo-S0-YHG"/>
+                                                    <action selector="onResetClick:" destination="BYZ-38-t0r" eventType="touchUpInside" id="PQt-wf-UeQ"/>
                                                 </connections>
                                             </button>
                                         </subviews>

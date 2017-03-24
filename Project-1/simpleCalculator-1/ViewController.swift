@@ -15,7 +15,8 @@ class ViewController: UIViewController {
     var isCalculating = false
     var havePrevValue = false
     var currentOperator = ""
-    var reset = false
+
+
     
     
     
@@ -29,15 +30,11 @@ class ViewController: UIViewController {
         
         if (isCalculating == true) {
             screenLabel.text = ""
+            
         }
+
+        screenLabel.text = screenLabel.text! + String(sender.tag)
         
-        if (reset == true) {
-            screenLabel.text = ""
-        }
-        
-        if let screenValue = screenLabel.text {
-            screenLabel.text = screenValue + String(sender.tag)
-        }
         
         isCalculating = false
         
@@ -48,6 +45,8 @@ class ViewController: UIViewController {
 
         //operation signs pressed
         //identify using tags
+        
+        isCalculating = true
         
         
         if (screenLabel.text == "" || screenLabel.text == "+") {
@@ -72,10 +71,33 @@ class ViewController: UIViewController {
             screenLabel.text = "+"
             currentOperator = "+"
             isCalculating = true
-            
+            return
             print(prevValue)
         }
         
+        //subtraction
+        if (sender.tag == 11) {
+            
+            
+            
+            if (havePrevValue != true) {
+                prevValue = Double(screenLabel.text!)!
+            } else {
+                return
+            }
+            
+            havePrevValue = true
+            screenLabel.text = "-"
+            currentOperator = "-"
+            
+            
+//            print(prevValue)
+        }
+        
+}
+    
+    
+    @IBAction func onResetClick(_ sender: UIButton) {
         //reset
         
         if (sender.tag == 15) {
@@ -85,16 +107,14 @@ class ViewController: UIViewController {
             currentOperator = ""
             isCalculating = false
         }
-        
-        
-            
-            
-}
+    }
     
     
     @IBAction func getResult(_ sender: UIButton) {
         //equal sign pressed
         
+        
+        //addition
         if (currentOperator == "+") {
             if (screenLabel.text == "+") {
                 return
@@ -102,9 +122,22 @@ class ViewController: UIViewController {
                 currentValue = Double(screenLabel.text!)!
             }
             
-            //        print(currentValue + prevValue)
-            result = currentValue + prevValue
-
+            //print(currentValue + prevValue)
+            result = prevValue + currentValue
+            
+        }
+        
+        //subtraction
+        if (currentOperator == "-") {
+            if (screenLabel.text == "-") {
+                return
+            } else {
+                currentValue = Double(screenLabel.text!)!
+            }
+            
+            //print(currentValue + prevValue)
+            result = prevValue - currentValue
+            
         }
         
         
@@ -114,10 +147,6 @@ class ViewController: UIViewController {
         prevValue = 0
         isCalculating = false
         havePrevValue = false
-        reset = true
-        
-        
-        
 }
     
     
