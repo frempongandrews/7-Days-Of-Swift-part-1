@@ -17,7 +17,9 @@ class DetailViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
+        title = selectedImage
+        
         //4- when it is loaded, show image
             //To show image we need:
             //a) image property on imageView and set it equal to a function
@@ -35,15 +37,22 @@ class DetailViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
+    //5- show image full screen on tap when DetailViewController screen appears
+    override func viewWillAppear(_ animated: Bool) {
+        
+        super.viewWillAppear(animated)
+        
+        navigationController?.hidesBarsOnTap = true
     }
-    */
+    
+    //5- DO NOT show image full screen on tap when DetailViewController screen disappears
+    //as it may cause issues on tap when we have the list of images showing
+    
+    override func viewWillDisappear(_ animated: Bool) {
+        
+        super.viewWillDisappear(animated)
+        
+        navigationController?.hidesBarsOnTap = false
+    }
 
 }
