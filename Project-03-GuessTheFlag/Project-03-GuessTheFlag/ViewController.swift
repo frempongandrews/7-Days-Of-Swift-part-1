@@ -72,22 +72,34 @@ class ViewController: UIViewController {
         
     }
     
+    func showFeedback (feedbackTitle: String = "", feedbackMessage: String = "") {
+        
+        let alert = UIAlertController(title: "\(feedbackTitle)",
+                                      message: "\(feedbackMessage)",
+                                      preferredStyle: .alert)
+        let action = UIAlertAction(title: "Continue",
+                                   style: .default,
+                                   handler: askQuestion)
+        
+        alert.addAction(action)
+        
+        present(alert, animated: true, completion: nil)
+        
+    }
+    
     
     @IBAction func onFlagClick(_ sender: UIButton) {
         
         if (sender.tag == correctAnswer) {
 //            print("yes")
             
-            let alert = UIAlertController(title: "Correct!",
-                                          message: "Keep Going!",
-                                          preferredStyle: .alert)
-            let action = UIAlertAction(title: "Continue",
-                                       style: .default,
-                                       handler: nil)
+            showFeedback(feedbackTitle: "Correct!", feedbackMessage: "Keep Going")
             
-            alert.addAction(action)
             
-            present(alert, animated: true, completion: nil)
+        } else {
+//            print("wrong")
+            
+            showFeedback(feedbackTitle: "Wrong!", feedbackMessage: "You Can Do Better...")
         }
     }
 
