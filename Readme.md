@@ -1,4 +1,4 @@
-7-Days-of-Swift-part-1:
+70 Days Of Swift:
 Learning Swift By Doing
 
 Hi Everyone
