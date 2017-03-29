@@ -95,12 +95,17 @@ class ViewController: UIViewController {
             
             showFeedback(feedbackTitle: "Correct!", feedbackMessage: "Keep Going")
             
+            score = score + 1
             
         } else {
 //            print("wrong")
             
             showFeedback(feedbackTitle: "Wrong!", feedbackMessage: "You Can Do Better...")
+            
+            score = score - 1
         }
+        
+        scoreLabel.text = "Score: \(score)"
     }
 
     override func didReceiveMemoryWarning() {
