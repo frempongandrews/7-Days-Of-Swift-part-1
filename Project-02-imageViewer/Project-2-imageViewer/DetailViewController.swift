@@ -38,12 +38,15 @@ class DetailViewController: UIViewController {
     }
     
     //5- show image full screen on tap when DetailViewController screen appears
+    
     override func viewWillAppear(_ animated: Bool) {
         
         super.viewWillAppear(animated)
         
         navigationController?.hidesBarsOnTap = true
+        
     }
+    
     
     //5- DO NOT show image full screen on tap when DetailViewController screen disappears
     //as it may cause issues on tap when we have the list of images showing
@@ -52,6 +55,7 @@ class DetailViewController: UIViewController {
         
         super.viewWillDisappear(animated)
         
+        //this
         navigationController?.hidesBarsOnTap = false
     }
 

@@ -79,6 +79,7 @@ class ViewController: UITableViewController {
             
             vc.selectedImage = pictures[indexPath.row]
             
+            
             navigationController?.pushViewController(vc, animated: true)
         }
     }
