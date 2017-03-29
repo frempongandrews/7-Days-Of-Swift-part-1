@@ -45,6 +45,7 @@ class ViewController: UIViewController {
     }
     
     func askQuestion (action: UIAlertAction! = nil) {
+        
         let flags = [flag1, flag2, flag3]
 
         
@@ -57,10 +58,13 @@ class ViewController: UIViewController {
         var count = 0
         
         for flag in flags {
+            
             flag?.setImage(UIImage(named: countries[count]), for: .normal)
             flag?.layer.borderWidth = 1
             count += 1
         }
+        
+        
         
 //        flag1.setImage(UIImage(named: countries[0]), for: .normal)
 //        flag2.setImage(UIImage(named: countries[1]), for: .normal)
@@ -68,6 +72,7 @@ class ViewController: UIViewController {
         
         //choosing which country to show in nav bar
         correctAnswer = Int(arc4random_uniform(3))
+        //country shown in nav bar
         title = countries[correctAnswer].uppercased()
         
     }
