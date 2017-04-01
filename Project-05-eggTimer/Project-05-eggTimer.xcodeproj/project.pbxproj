@@ -7,29 +7,25 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		60F285E61E8C326B00B0685A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60F285E51E8C326B00B0685A /* AppDelegate.swift */; };
-		60F285E81E8C326B00B0685A /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60F285E71E8C326B00B0685A /* FirstViewController.swift */; };
-		60F285EA1E8C326B00B0685A /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60F285E91E8C326B00B0685A /* SecondViewController.swift */; };
-		60F285ED1E8C326B00B0685A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 60F285EB1E8C326B00B0685A /* Main.storyboard */; };
-		60F285EF1E8C326B00B0685A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 60F285EE1E8C326B00B0685A /* Assets.xcassets */; };
-		60F285F21E8C326B00B0685A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 60F285F01E8C326B00B0685A /* LaunchScreen.storyboard */; };
-		60F285FA1E8D880A00B0685A /* Utilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60F285F91E8D880A00B0685A /* Utilities.swift */; };
+		60C63AE01E8EDF0B00877ACA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60C63ADF1E8EDF0B00877ACA /* AppDelegate.swift */; };
+		60C63AE21E8EDF0B00877ACA /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60C63AE11E8EDF0B00877ACA /* ViewController.swift */; };
+		60C63AE51E8EDF0B00877ACA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 60C63AE31E8EDF0B00877ACA /* Main.storyboard */; };
+		60C63AE71E8EDF0B00877ACA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 60C63AE61E8EDF0B00877ACA /* Assets.xcassets */; };
+		60C63AEA1E8EDF0B00877ACA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 60C63AE81E8EDF0B00877ACA /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		60F285E21E8C326B00B0685A /* Project-04-backToTheFuture.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Project-04-backToTheFuture.app"; sourceTree = BUILT_PRODUCTS_DIR; };
-		60F285E51E8C326B00B0685A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		60F285E71E8C326B00B0685A /* FirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
-		60F285E91E8C326B00B0685A /* SecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
-		60F285EC1E8C326B00B0685A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		60F285EE1E8C326B00B0685A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		60F285F11E8C326B00B0685A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		60F285F31E8C326B00B0685A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		60F285F91E8D880A00B0685A /* Utilities.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Utilities.swift; sourceTree = "<group>"; };
+		60C63ADC1E8EDF0B00877ACA /* Project-05-eggTimer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Project-05-eggTimer.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		60C63ADF1E8EDF0B00877ACA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		60C63AE11E8EDF0B00877ACA /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		60C63AE41E8EDF0B00877ACA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		60C63AE61E8EDF0B00877ACA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		60C63AE91E8EDF0B00877ACA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		60C63AEB1E8EDF0B00877ACA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		60F285DF1E8C326B00B0685A /* Frameworks */ = {
+		60C63AD91E8EDF0A00877ACA /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -39,74 +35,72 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		60F285D91E8C326B00B0685A = {
+		60C63AD31E8EDF0A00877ACA = {
 			isa = PBXGroup;
 			children = (
-				60F285E41E8C326B00B0685A /* Project-04-backToTheFuture */,
-				60F285E31E8C326B00B0685A /* Products */,
+				60C63ADE1E8EDF0B00877ACA /* Project-05-eggTimer */,
+				60C63ADD1E8EDF0B00877ACA /* Products */,
 			);
 			sourceTree = "<group>";
 		};
-		60F285E31E8C326B00B0685A /* Products */ = {
+		60C63ADD1E8EDF0B00877ACA /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				60F285E21E8C326B00B0685A /* Project-04-backToTheFuture.app */,
+				60C63ADC1E8EDF0B00877ACA /* Project-05-eggTimer.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		60F285E41E8C326B00B0685A /* Project-04-backToTheFuture */ = {
+		60C63ADE1E8EDF0B00877ACA /* Project-05-eggTimer */ = {
 			isa = PBXGroup;
 			children = (
-				60F285E51E8C326B00B0685A /* AppDelegate.swift */,
-				60F285E71E8C326B00B0685A /* FirstViewController.swift */,
-				60F285E91E8C326B00B0685A /* SecondViewController.swift */,
-				60F285EB1E8C326B00B0685A /* Main.storyboard */,
-				60F285EE1E8C326B00B0685A /* Assets.xcassets */,
-				60F285F01E8C326B00B0685A /* LaunchScreen.storyboard */,
-				60F285F31E8C326B00B0685A /* Info.plist */,
-				60F285F91E8D880A00B0685A /* Utilities.swift */,
+				60C63ADF1E8EDF0B00877ACA /* AppDelegate.swift */,
+				60C63AE11E8EDF0B00877ACA /* ViewController.swift */,
+				60C63AE31E8EDF0B00877ACA /* Main.storyboard */,
+				60C63AE61E8EDF0B00877ACA /* Assets.xcassets */,
+				60C63AE81E8EDF0B00877ACA /* LaunchScreen.storyboard */,
+				60C63AEB1E8EDF0B00877ACA /* Info.plist */,
 			);
-			path = "Project-04-backToTheFuture";
+			path = "Project-05-eggTimer";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		60F285E11E8C326B00B0685A /* Project-04-backToTheFuture */ = {
+		60C63ADB1E8EDF0A00877ACA /* Project-05-eggTimer */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 60F285F61E8C326B00B0685A /* Build configuration list for PBXNativeTarget "Project-04-backToTheFuture" */;
+			buildConfigurationList = 60C63AEE1E8EDF0B00877ACA /* Build configuration list for PBXNativeTarget "Project-05-eggTimer" */;
 			buildPhases = (
-				60F285DE1E8C326B00B0685A /* Sources */,
-				60F285DF1E8C326B00B0685A /* Frameworks */,
-				60F285E01E8C326B00B0685A /* Resources */,
+				60C63AD81E8EDF0A00877ACA /* Sources */,
+				60C63AD91E8EDF0A00877ACA /* Frameworks */,
+				60C63ADA1E8EDF0A00877ACA /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = "Project-04-backToTheFuture";
-			productName = "Project-04-backToTheFuture";
-			productReference = 60F285E21E8C326B00B0685A /* Project-04-backToTheFuture.app */;
+			name = "Project-05-eggTimer";
+			productName = "Project-05-eggTimer";
+			productReference = 60C63ADC1E8EDF0B00877ACA /* Project-05-eggTimer.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		60F285DA1E8C326B00B0685A /* Project object */ = {
+		60C63AD41E8EDF0A00877ACA /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0800;
 				LastUpgradeCheck = 0800;
 				ORGANIZATIONNAME = "Andrews Frempong";
 				TargetAttributes = {
-					60F285E11E8C326B00B0685A = {
+					60C63ADB1E8EDF0A00877ACA = {
 						CreatedOnToolsVersion = 8.0;
 						ProvisioningStyle = Automatic;
 					};
 				};
 			};
-			buildConfigurationList = 60F285DD1E8C326B00B0685A /* Build configuration list for PBXProject "Project-04-backToTheFuture" */;
+			buildConfigurationList = 60C63AD71E8EDF0A00877ACA /* Build configuration list for PBXProject "Project-05-eggTimer" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -114,56 +108,54 @@
 				en,
 				Base,
 			);
-			mainGroup = 60F285D91E8C326B00B0685A;
-			productRefGroup = 60F285E31E8C326B00B0685A /* Products */;
+			mainGroup = 60C63AD31E8EDF0A00877ACA;
+			productRefGroup = 60C63ADD1E8EDF0B00877ACA /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				60F285E11E8C326B00B0685A /* Project-04-backToTheFuture */,
+				60C63ADB1E8EDF0A00877ACA /* Project-05-eggTimer */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		60F285E01E8C326B00B0685A /* Resources */ = {
+		60C63ADA1E8EDF0A00877ACA /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				60F285F21E8C326B00B0685A /* LaunchScreen.storyboard in Resources */,
-				60F285EF1E8C326B00B0685A /* Assets.xcassets in Resources */,
-				60F285ED1E8C326B00B0685A /* Main.storyboard in Resources */,
+				60C63AEA1E8EDF0B00877ACA /* LaunchScreen.storyboard in Resources */,
+				60C63AE71E8EDF0B00877ACA /* Assets.xcassets in Resources */,
+				60C63AE51E8EDF0B00877ACA /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		60F285DE1E8C326B00B0685A /* Sources */ = {
+		60C63AD81E8EDF0A00877ACA /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				60F285EA1E8C326B00B0685A /* SecondViewController.swift in Sources */,
-				60F285E61E8C326B00B0685A /* AppDelegate.swift in Sources */,
-				60F285FA1E8D880A00B0685A /* Utilities.swift in Sources */,
-				60F285E81E8C326B00B0685A /* FirstViewController.swift in Sources */,
+				60C63AE21E8EDF0B00877ACA /* ViewController.swift in Sources */,
+				60C63AE01E8EDF0B00877ACA /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		60F285EB1E8C326B00B0685A /* Main.storyboard */ = {
+		60C63AE31E8EDF0B00877ACA /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				60F285EC1E8C326B00B0685A /* Base */,
+				60C63AE41E8EDF0B00877ACA /* Base */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
 		};
-		60F285F01E8C326B00B0685A /* LaunchScreen.storyboard */ = {
+		60C63AE81E8EDF0B00877ACA /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				60F285F11E8C326B00B0685A /* Base */,
+				60C63AE91E8EDF0B00877ACA /* Base */,
 			);
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
@@ -171,7 +163,7 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
-		60F285F41E8C326B00B0685A /* Debug */ = {
+		60C63AEC1E8EDF0B00877ACA /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -220,7 +212,7 @@
 			};
 			name = Debug;
 		};
-		60F285F51E8C326B00B0685A /* Release */ = {
+		60C63AED1E8EDF0B00877ACA /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -262,25 +254,25 @@
 			};
 			name = Release;
 		};
-		60F285F71E8C326B00B0685A /* Debug */ = {
+		60C63AEF1E8EDF0B00877ACA /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				INFOPLIST_FILE = "Project-04-backToTheFuture/Info.plist";
+				INFOPLIST_FILE = "Project-05-eggTimer/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.AndrewsFrempong.Project-04-backToTheFuture";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.AndrewsFrempong.Project-05-eggTimer";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
 		};
-		60F285F81E8C326B00B0685A /* Release */ = {
+		60C63AF01E8EDF0B00877ACA /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				INFOPLIST_FILE = "Project-04-backToTheFuture/Info.plist";
+				INFOPLIST_FILE = "Project-05-eggTimer/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.AndrewsFrempong.Project-04-backToTheFuture";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.AndrewsFrempong.Project-05-eggTimer";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
 			};
@@ -289,25 +281,24 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		60F285DD1E8C326B00B0685A /* Build configuration list for PBXProject "Project-04-backToTheFuture" */ = {
+		60C63AD71E8EDF0A00877ACA /* Build configuration list for PBXProject "Project-05-eggTimer" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				60F285F41E8C326B00B0685A /* Debug */,
-				60F285F51E8C326B00B0685A /* Release */,
+				60C63AEC1E8EDF0B00877ACA /* Debug */,
+				60C63AED1E8EDF0B00877ACA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		60F285F61E8C326B00B0685A /* Build configuration list for PBXNativeTarget "Project-04-backToTheFuture" */ = {
+		60C63AEE1E8EDF0B00877ACA /* Build configuration list for PBXNativeTarget "Project-05-eggTimer" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				60F285F71E8C326B00B0685A /* Debug */,
-				60F285F81E8C326B00B0685A /* Release */,
+				60C63AEF1E8EDF0B00877ACA /* Debug */,
+				60C63AF01E8EDF0B00877ACA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = 60F285DA1E8C326B00B0685A /* Project object */;
+	rootObject = 60C63AD41E8EDF0A00877ACA /* Project object */;
 }
