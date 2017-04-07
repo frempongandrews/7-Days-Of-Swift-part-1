@@ -3,6 +3,8 @@ Learning Swift By Doing
 
 ![Alt Text](https://media.giphy.com/media/l0HlVBItPYXI7aMk8/giphy.gif)
 
+![Alt Text](https://media.giphy.com/media/l0HlVBItPYXI7aMk8/giphy.gif)
+
 Hi Everyone
 
 I am Andrews Frempong, a frontend developer and currently learning Swift.
